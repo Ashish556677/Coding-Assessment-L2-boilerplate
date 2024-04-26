@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Coding Assessment L2 boilerplate</title>
+</head>
+<body>      
+    <div class="product-container">
+        <div class="product-images">
+            <img src="./img/img1.jpg" alt="Main Image">
+            <div class="small-images">
+                <img src="./img/img2.jpg" alt="Small Image 1" data-index="0">
+                <img src="./img/img3.jpg" alt="Small Image 2" data-index="1">
+                <img src="./img/img4.jpg" alt="Small Image 3" data-index="2">
+                <img src="./img/img1.jpg" alt="Small Image 4" data-index="2">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h4 class="Marmeto-logo">Marmeto</h4>
+            <h1>Eumreze Sideboard</h1>
+            <p class="price">
+                <span class="new-price"></span>
+                <span class="old-price">Old Price</span>
+                <span class="discount">35% Off</span>
+            </p>
+            <div class="colors">
+                <span class="color-option" style="background-color: #0ff1e9;"></span>
+                <span class="color-option" style="background-color: #40d010;"></span>
+                <span class="color-option" style="background-color: #ca14c1;"></span>
+                <span class="color-option" style="background-color: #0000FF;"></span>
+                <span class="color-option" style="background-color: #FFFF00;"></span>
+            </div>
+            <div class="sizes">
+                <button>Small</button>
+                <button>Medium</button>
+                <button>Large</button>
+                <button>Extra Large</button>
+                <button>XXL</button>
+            </div>
+            <div class="quantity">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="add-to-cart">Add To Cart</button>
+                <div class="cart-items"></div>
+            </div>
+            <div class="description">
+                <!-- <h3>Description</h3> -->
+                <p >
+                    The Embrace Sideboard is a stylish wear. With a top cloth designed to
+                    provide superior protection and look great, this storage solution is both functional and attractive. 
+                    It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials 
+                    for a combination of style, durability, and reliability.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

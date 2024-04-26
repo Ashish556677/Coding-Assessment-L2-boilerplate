@@ -1,0 +1,177 @@
+
+/* Default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.product-details .price .old-price {
+  text-decoration: line-through;
+}
+.product-details .price .new-price {
+  font-weight: 600;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  background-color: #fff; /* Set background color to full white */
+  padding: 20px;
+}
+
+.Marmeto-logo{
+  color: rgb(190, 188, 188);
+}
+
+/* Product container styles */
+.product-container {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #fff;
+  
+}
+
+/* discount */
+.discount{
+  color: crimson;
+}
+
+/* Product images container */
+.product-images {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Larger main image */
+.product-images img {
+  width: 95%;
+  height: 55%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Small images container */
+.small-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Small image styles */
+.small-images img {
+  width: calc(23.33% - 20px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product details container */
+.product-details {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Product title styles */
+.product-details h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Price styles */
+.price {
+  margin-bottom: 10px;
+}
+
+/* Color options styles */
+.colors {
+  margin-bottom: 10px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Sizes styles */
+.sizes button {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Quantity styles */
+.quantity {
+  margin-bottom: 10px;
+}
+
+.quantity label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.quantity input {
+  width: 50px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+/* Add to cart button styles */
+.add-to-cart {
+  background-color: #235185ec;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+.add-to-cart:hover {
+  background-color: #278bcacb;
+}
+.description {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding: 0 15px;
+  text-align: justify;
+}
+
+
+/*for mobile screens*/
+@media only screen and (max-width: 767px) {
+  .product-container {
+      flex-direction: column;
+      max-width: 100%;
+  }
+  .product-details {
+      padding: 20px 0;
+  }
+  .product-image img {
+      max-width: 100%;
+  }
+  .color-option {
+      width: 15px;
+      height: 15px;
+  }
+  .sizes button {
+      padding: 3px 8px;
+  }
+  .add-to-cart {
+      padding: 8px 12px;
+  }
+}
+/* for tablet screen */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+/* for laptop screen */
+@media only screen and (min-width: 1025px) {
+}
